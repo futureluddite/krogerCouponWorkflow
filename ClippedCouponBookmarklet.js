@@ -21,13 +21,13 @@
   }
 
   function main() {
-    //Delete Coupons that have been removed
+    /*Delete Coupons that have been removed*/
     var removeNotices = document.getElementsByClassName("CannotRemoveCouponNew");
     for (var i = removeNotices.length-1; i >= 0; i--) {
       removeNotices[i].parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
     }
 
-    //Original code
+    /*Original code*/
     var couponContainers = document.getElementsByClassName("CouponCardNew");
     var cc, category, savings, description;
     var list = [];
